@@ -1,0 +1,378 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+.main-ctn{
+    width:100vw;
+    height:100vh;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* ---------start of first page----------- */
+.first-page{
+    width:100vw;
+    height:100vh;
+    background-image: url(https://getwallpapers.com/wallpaper/full/f/f/9/490193.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.first-page::after{
+    width: 100%;
+    height:100%;
+    content: " ";
+    background-color: black;
+    opacity: 0.3;
+    position:absolute;
+}
+
+.content-ctn{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 11;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    gap: 10px;
+}
+.welcome{
+    color:white;
+    font-family:monospace;
+    font-size: 35px;
+    font-weight:300;
+}
+.intro{
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+}
+.para{
+    color: white;
+    font-family:cursive;
+    margin-top: 10px;
+}
+.button{
+    width:100px;
+    height: 50px;
+    background: none;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 2.5px;
+    margin-top:25px;
+    cursor: pointer;
+}
+button:hover{
+    /* background-color:#153448; */
+    background-color: #A5C9CA;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transform: scale(1.1);
+}
+/* ------------- end of first page -------- */
+
+/* -------------start of about page--------------- */
+
+.about{
+    width:100vw;
+    height:100vh;
+    margin-top: 10px;
+    position:relative;
+    box-sizing:border-box;
+}
+.top{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.abt-me{
+    font-size: 130px;
+    text-align: center;
+    font-family:"Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+    color: #A5C9CA;
+}
+.know{
+    position:absolute;
+    top:78px;
+    left:700px;
+    font-size:40px;
+    text-align: center;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+}
+.bottom{
+    padding:20px;
+    width:100%;
+    height:68%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    box-sizing: border-box;
+}
+.bottom-left{
+    flex : 1 1 70%;
+    padding:20px;
+    box-sizing:border-box;
+    
+}
+.name{
+    font-family:"Playfair Display", serif;
+    font-size:30px;
+    color: black;
+}
+.name-color{
+    font-family:"Playfair Display", serif;
+    font-size:30px;
+    color:#A5C9CA;
+    -webkit-text-stroke: 0.5px black;
+}
+.text{
+    text-justify: auto;
+    line-height: 1.9;
+    margin-top: 15px;
+    font-family:sans-serif;
+    color: #474E68;
+    font-size:18px;
+}
+.bottom-right{
+    margin-top:20px;
+    flex: 1 1 25%;
+    padding:20px;
+    box-sizing: border-box;
+    line-height: 2;
+    font-size:18px;
+    color: #474E68;
+}
+.email{
+    color:#A5C9CA;
+    font-family:sans-serif
+}
+.email:hover{
+    cursor:pointer;
+}
+
+.bottom-right p{
+    border-bottom: 0.5px solid #A5C9CA; 
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* -------------end of about page--------------- */
+
+
+
+/* ------------start of services section--------------------- */
+
+
+
+.services{
+    width:100vw;
+    min-height:100vh;
+    margin-top: 10px;
+    position:relative;
+    box-sizing:border-box;
+    background-color: #F8F9FA;
+}
+.upside{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.serve{
+    font-size: 100px;
+    text-align: center;
+    font-family:"Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+    color: #A5C9CA;
+}
+.what{
+    position:absolute;
+    top:60px;
+    left:690px;
+    font-size:40px;
+    text-align: center;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+}
+
+.downside{
+    width:100%;
+    height:auto;
+    padding:20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+.card{
+    width: calc(45% - 20px);
+    height:300px;
+    margin-bottom: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+    padding:20px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background-color: white;
+}
+
+.card:hover{
+    transition: all 0.3s ease; 
+    /* cursor:pointer; */
+    background-color: #A5C9CA;
+    transform: scale(0.95);
+    font-family: sans-serif;
+}
+.card-heading{
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    color: black;
+    margin:10px;
+}
+.card-logo{
+    width: 100px;
+    height: 100px;
+    filter: grayscale(100%); 
+    transition: filter 0.3s ease;
+}
+.card-para{
+    flex-direction: column;
+    align-items: center;
+    text-justify: auto;
+    line-height: 1.9;
+    margin-top: 15px;
+    font-family:sans-serif;
+    color: #474E68;
+}
+
+
+/* ------------end of services section---------------------  */
+
+
+
+/* ------------start of contact-me------------------------- */
+
+.contact-me{
+    width: 100vw;
+    min-height: 100vh;
+    margin-top: 10px;
+    position: relative;
+    box-sizing: border-box;
+    background-color: #F8F9FA;
+    padding: 50px 20px;
+}
+.title{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+.contact{
+    font-size: 100px;
+    text-align: center;
+    font-family:"Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+    color: #A5C9CA;
+}
+.get{
+    position:absolute;
+    top:100px;
+    left:700px;
+    font-size:40px;
+    text-align: center;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+}
+.contact-form{
+    width: 70%;
+    margin: 0 auto;
+}
+.input-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap : 50px;
+    
+}
+.input-group{
+    flex: 1;
+    max-width: 48%
+    display: flex;
+    flex-direction: column;
+
+}
+.input-group label{
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.input-group input,
+.input-group textarea {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    padding: 15px 12px; 
+    height: 50px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 6px;
+}
+
+.input-group textarea{
+    resize: none;
+    height: auto; 
+    min-height: 100px;
+}
+.submit-button{
+    width: 70%;
+    padding: 15px;
+    background-color: #A5C9CA;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 100px;
+}
+.submit-button:hover {
+    background-color: #87B2B5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+
+/* --------------------------end of contact-me------------------------- */
